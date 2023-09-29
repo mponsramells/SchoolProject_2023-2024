@@ -1,8 +1,12 @@
 @import "variable.scss";
+body{
+  overflow-x: hidden;
+}
 .top-container{
   background-image: url("../img/top-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: relative;
   height: 100vh;
   .content{
@@ -75,20 +79,52 @@
 .slider-1{
   background-image: url("../img/bmw-i5.png");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   transition: flex .8s ease;
 }
 .slider-2{
   background-image: url("../img/bmw-i5-2.png");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   transition: flex .8s ease;
 }
 .slider-3{
   background-image: url("../img/bmw-i5-3.png");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   transition: flex .8s ease;
+}
+
+#carouselDark {
+  width: 75% !important;
+  margin: 0 auto !important;
+  .carousel-inner .carousel-item img {
+    width: 100% !important;
+  }
+  .carousel-control-prev {
+    left: -20% !important;
+  }
+  .carousel-control-next {
+    right: -20% !important;
+  }
+  .carousel-indicators [data-bs-target]  {
+    background-color: white !important;
+  }
+}
+.bottom-container{
+  background-image: url('../img/bmw_vision.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .slider {
+    height: 85vh;
+    transition: none;
+  }
 }
 
 
